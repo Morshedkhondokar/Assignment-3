@@ -7,8 +7,7 @@
     <!-- Google Fonts CDN  -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- font Awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs6JQG1nNnJvyMX4aZxz1RfrGs0XyZ+I5vDgX7hcGmK5mOxsRdzU8A+JL8D1l5fZ7KfmszT1v5Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUI CDN -->
@@ -22,10 +21,40 @@
       </style>
       
 </head>
-<body>
+<body class="font_manrope">
     <!-- ////////header\\\\\\\\\ -->
-    <header>
+    <header class="max-w-[1440px] mx-auto px-4 py-8">
+        <!-- navber -->
+         <nav class="flex justify-between">
+            <!-- first div -->
+             <div class="flex justify-center items-center gap-2">
+                <div class="w-8 h-8 bg-[#ABEF5F] grid place-items-center rounded-full"><i class="fas fa-arrow-right text-black -rotate-12"></i></div>
+                <h2 class="font-extrabold text-3xl">Rinterio</h2>
+             </div>
+            <!-- second div -->            
+                <ul class="flex gap-9 justify-center items-center hidden lg:flex">
+                    <li class="font-extrabold text-[#494949]">Home</li>
+                    <li class="text-[#737373]">Services</li>
+                    <li class="text-[#737373]">Portfolio</li>
+                    <li class="text-[#737373]">Blogs</li>
+                    <li class="text-[#737373]">Contact Us</li>
+                </ul>
 
+            <!-- thart div -->
+             <div class="flex gap-4 justify-center items-center">
+                <!-- icon -->
+                 <div class="w-10 h-10 bg-white border border-[#737373] rounded-full hidden md:flex md:justify-center md:items-center"><i class="fas fa-search text-[#737373]"></i></div>
+
+                 <div class="w-10 h-10 bg-white border border-[#737373] rounded-full hidden md:flex md:justify-center md:items-center"><i class="fas fa-shopping-cart text-[#737373]"></i></div>
+
+                 <button class="btn bg-[#ABEF5F] pl-5 pr-6 px-3 rounded-3xl text-[#1C1C1C] font-extrabold 
+                 text-[20px] hidden md:flex">Book Consult <div class="inline-block w-6 h-6 bg-[#1C1C1C] grid place-items-center rounded-full"><i class="fas fa-arrow-right text-white text-[14px] -rotate-12"></i></div></button>
+                 <!-- bar icon -->
+                  <div class="lg:hidden w-10 h-10 bg-white border border-[#737373] rounded-full grid place-items-center">
+                    <i class="fas fa-bars text-[#737373]"></i>
+                  </div>
+             </div>
+         </nav>
     </header>
     <!-- ////////main\\\\\\\\\\\ -->
     <main>
